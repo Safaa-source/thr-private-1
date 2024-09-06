@@ -1,1 +1,1 @@
-# thr-private
+# THR

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<style>
+    /* Display the menu when the checkbox is checked */
+    #menu-toggle:checked~#menu {
+        display: block;
+    }
+
+    /* Hide the menu if not checked */
+    #menu:hover {
+        display: block;
+    }
+</style>
+
+<body>
+    <!-- Transparent Navbar -->
+    <nav class="navbar top-0 left-0 w-[100%] z-10 h-[10vh] flex justify-between items-center py-1 px-2 text-[#fff] fixed">
+        <div class="navbar-logo w-2/12 ">
+            <a href="./index.html"><img class="w-[60px] hover:w-[70px] mt-6 ml-6" src="./images/1000-hills-logo.png" alt="Logo"></a>
+            <!-- Replace with your logo -->
+        </div>
+        <ul class="flex lg:space-x-4 font-thin w-8/12 uppercase gap-2 text-sm ">
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./index.html">Home</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">About</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Community</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Results</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./news.html">News</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./events.html">Events</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./contact.html">Contact Us</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./services.html">Services</a></li>
+        </ul>
+        <div class="flex w-2/12 list-1">
+            <ul class="flex lg:gap-6 gap-2 justify-center items-center text-md ">
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.facebook.com/1000hillsrugby/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.instagram.com/1000hillsrugby/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg"
+                        href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 ">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.youtube.com/@1000HillsRugby">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="relative icon-1 lg:hidden">
+            <!-- Hidden Checkbox for Toggle -->
+            <input type="checkbox" id="menu-toggle" class="hidden">
+
+            <!-- Label as Menu Icon -->
+            <label for="menu-toggle" class="cursor-pointer text-2xl">
+                <i class="icon-1 lg:hidden text-black text-xl pr-3 fa-solid fa-bars"></i>
+            </label>
+
+            <!-- Hidden Menu -->
+            <div id="menu"
+                class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg mt-2 w-48 hidden">
+                <ul class="flex flex-col text-left">
+                    <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./index.html">Home</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">About</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Community</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Results</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./news.html">News</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./events.html">Events</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <!-- Slideshow Container -->
+        <section
+            class="slideshow-container bg-cover bg-no-repeat h-[100vh]  max-w-full grid grid-cols-12 items-center ">
+            <div class="text-container border-l-[10px] flex flex-col gap-2 col-span-9 border-white-500 pl-2 text-white">
+                <p class="text-[20px] font-thin">REPORT: RAMS 84- 85 EAGLES</p>
+                <h1 class="lg:text-8xl text-7xl font-[650]"> <span class="text-[#006838]">ONE POINT</span> <br> LEAD FOR
+                    <br> FINALE
+                </h1>
+            </div>
+        </section>
+
+        <!-- ........................Match date section ................... -->
+        <section class="w-[95%] mx-auto text-center border-b border-gray-300 pb-4">
+            <div class="flex lg:flex-row flex-col justify-between -mt-20 mb-24">
+                <!-- First game result -->
+                <div
+                    class="flex lg:flex-row md:flex-row flex-col items-center mt-6 bg-white text-white  justify-between lg:w-[49%] w-full shadow-lg">
+                    <!-- Date section with black background and white text -->
+                    <div
+                        class="text-center bg-black flex lg:flex-col md:flex-col justify-center text-white py-4 px-2 lg:w-[10%] md:w-[8%] w-full lg:h-32 h-16 md:h-24">
+                        <p class="text-xl font-semibold mx-2">30</p>
+                        <p class="lg:text-md mx-2 text-sm flex items-center font-thin">OCT</p>
+                    </div>
+                    <!-- Match details with white background and no padding -->
+                    <div
+                        class="flex-1 flex lg:flex-row md:flex-row flex-col justify-between items-center bg-white text-[#02120b] py-4 px-6 w-11/12">
+                        <div class="flex items-center m-0">
+                            <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                            <div class="flex flex-col">
+                                <p class="text-4xl font-bold">112</p>
+                                <p>EAGLES</p>
+                            </div>
+                        </div>
+                        <p class="text-3xl font-semibold text-[#dcbb26]">Vs</p>
+                        <div class="flex items-center m-0">
+                            <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 2 Logo">
+                            <div class="fle flex-col">
+                                <p class="text-4xl font-bold">101</p>
+                                <p>RHINOS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second game result -->
+                <div
+                    class="flex lg:flex-row md:flex-row flex-col items-center mt-6 bg-white text-white justify-between lg:w-[49%] w-full shadow-lg">
+                    <!-- Date section with black background and white text -->
+                    <div
+                        class="text-center bg-black flex lg:flex-col md:flex-col justify-center text-white py-4 px-2 lg:w-[10%] md:w-[8%] w-full lg:h-32 h-16 md:h-24">
+                        <p class="text-xl font-semibold mx-2">26</p>
+                        <p class="lg:text-md mx-2 text-sm flex items-center font-thin">OCT</p>
+                    </div>
+                    <!-- Match details with white background and no padding -->
+                    <div
+                        class="flex-1 flex lg:flex-row md:flex-row flex-col justify-between items-center bg-white text-[#02120b] py-4 px-6 w-11/12">
+                        <div class="flex items-center m-0">
+                            <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                            <div class="fle flex-col">
+                                <p class="text-4xl font-bold">85</p>
+                                <p>RAMS</p>
+                            </div>
+                        </div>
+                        <p class="text-3xl font-semibold text-[#dcbb26]">Vs</p>
+                        <div class="flex items-center m-0">
+                            <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 2 Logo">
+                            <div class="fle flex-col">
+                                <p class="text-4xl font-bold">84</p>
+                                <p>EAGLES</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- news section -->
+        <section class="w-11/12 px-4 flex flex-col  m-auto">
+            <div class="flex lg:flex-row flex-col py-16">
+                <div class="text-4xl font-semibold flex w-8/12 justify-start">
+                    LATEST NEWS
+                </div>
+                <div class="flex flex-row gap-4 w-4/12 lg:justify-end">
+                    <a class="flex flex-row gap-4 w-4/12 lg:justify-end" href="./news.html">
+                        <div>
+                            <i class="text-xl hover:text-[#000] text-[#dcbb26] pt-1 fa-regular fa-newspaper"></i>
+                        </div>
+                        <div class="flex hover:text-[#dcbb26] whitespace-nowrap items-center">ALL NEWS</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class=" grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 flex-col gap-6">
+                <div class="flex flex-col gap-4  w-full">
+                    <div>
+                        <img class="rounded-xl h-[160px] w-[300px]" src="./images/image1.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-md">30/September</span>
+                        <p class="font-semibold text-xl w-10/12">FREE THROWS KEY TO LATE GAME SUCCESS</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4  w-full">
+                    <div>
+                        <img class="rounded-xl h-[160px] w-[300px]" src="./images/image2.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-md">29/September</span>
+                        <p class="font-semibold text-xl">ROSE RETURN TO TRAINING AFTER ELBOW INJURY</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4  w-full">
+                    <div>
+                        <img class="rounded-xl h-[160px] w-[300px]" src="./images/rugby-1.webp" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-md">26/September</span>
+                        <p class="font-semibold text-xl">PREPAIRING FOR RUGBY SEASON COACHING ADVICE</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4  w-full">
+                    <div>
+                        <img class="rounded-xl h-[160px] w-[300px]" src="./images/rugby-3.jpeg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-md">22/September</span>
+                        <p class="font-semibold text-xl">DOES RUGBY BUILD CHARACTER</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- events section -->
+        <section class="w-11/12 px-4 flex m-auto flex gap-16 flex-col pt-44 pb-44">
+            <div class="flex lg:flex-row flex-col">
+                <div class="text-4xl font-semibold flex w-8/12 justify-start">
+                    EVENTS
+                </div>
+                <div class="flex flex-row gap-4 w-4/12 lg:justify-end all-events">
+                    <a class="flex flex-row gap-4 w-4/12 lg:justify-end" href="./events.html">
+                        <div>
+                            <i class="text-xl hover:text-[#000] text-[#dcbb26] pt-1 fa-regular fa-calendar"></i>
+                        </div>
+                        <div class="flex hover:text-[#dcbb26] items-center whitespace-nowrap">ALL EVENTS</div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-6">
+                <div
+                    class="flex lg:flex-row flex-col items-center bg-white text-white rounded-xl justify-between w-full hover:shadow-2xl border border-[#6d6e71]">
+                    <div
+                        class="news-box text-center bg-[#dcbb26] lg:rounded-s-xl max-lg:rounded-t-xl text-white py-4 px-2 lg:w-auto w-[100%] h-[100%]">
+                        <p class="text-lg font-semibold">11</p>
+                        <p class="text-md font-thin">NOV</p>
+                    </div>
+                    <!-- Match details with white background and no padding -->
+                    <div
+                        class="flex-1 flex lg:justify-between justify-center items-center rounded-e-xl bg-white text-[#02120b] py-4 px-6 w-11/12 ">
+                        <div class="flex lg:flex-row flex-col items-center m-0">
+                            <img class="w-20 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                            <div class="flex flex-col text-center ">
+                                <p class="text-2xl font-semibold">WASHINGTON WOLVES</p>
+                                <p>SPORT ARENA / 7.45PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex lg:flex-row flex-col items-center bg-white text-white rounded-xl justify-between  w-full hover:shadow-2xl border border-[#6d6e71]">
+                    <div class="news-box text-center bg-[#dcbb26] lg:rounded-s-xl max-lg:rounded-t-xl text-white py-4 px-2 lg:w-auto w-[100%] h-[100%]">
+                        <p class="text-lg font-semibold">18</p>
+                        <p class="text-md font-thin">NOV</p>
+                    </div>
+                    <!-- Match details with white background and no padding -->
+                    <div class="flex-1 flex lg:justify-between justify-center items-center rounded-e-xl bg-white text-[#02120b] py-4 px-6 w-11/12">
+                        <div class="flex lg:flex-row flex-col items-center m-0">
+                            <img class="w-20 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                            <div class="flex flex-col text-center">
+                                <p class="text-2xl font-semibold">N.CAROLINA HORNETS</p>
+                                <p>SPORT ARENA / 7.45PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex lg:flex-row flex-col items-center bg-white text-white rounded-xl justify-between  w-full hover:shadow-2xl border border-[#6d6e71]">
+                    <div
+                        class="news-box text-center bg-[#dcbb26] lg:rounded-s-xl max-lg:rounded-t-xl text-white py-4 px-2 lg:w-auto w-[100%] h-[100%]">
+                        <p class="text-lg font-semibold">5</p>
+                        <p class="text-md font-thin">DEC</p>
+                    </div>
+                    <!-- Match details with white background and no padding -->
+                    <div
+                        class="flex-1 flex lg:justify-between justify-center items-center rounded-e-xl bg-white text-[#02120b] py-4 px-6 w-11/12 ">
+                        <div class="flex lg:flex-row flex-col items-center m-0">
+                            <img class="w-20 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                            <div class="flex flex-col text-center">
+                                <p class="text-2xl font-semibold">N.CAROLINA HORNETS</p>
+                                <p>SPORT ARENA / 7.45PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex lg:flex-row flex-col items-center bg-white text-white rounded-xl justify-between  w-full hover:shadow-2xl border border-[#6d6e71]">
+                    <div
+                        class="news-box text-center bg-[#dcbb26] lg:rounded-s-xl max-lg:rounded-t-xl text-white py-4 px-2 lg:w-auto w-[100%] h-[100%]">
+                        <p class="text-lg font-semibold">27</p>
+                        <p class="text-md font-thin">NOV</p>
+                    </div>
+                    <!-- Match details with white background and no padding -->
+                    <div
+                        class="flex-1 lg:justify-between flex justify-center justify-center rounded-e-xl bg-white text-[#02120b] py-4 px-6 w-11/12 ">
+                        <div class="flex lg:flex-row flex-col items-center m-0">
+                            <img class="w-20 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                            <div class="fle flex-col text-center">
+                                <p class="text-2xl font-semibold ">WASHINGTON WOLVES</p>
+                                <p>SPORT ARENA / 7.45PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fixed-image max-lg:flex max-lg:justify-center max-lg:items-center bg-cover lg:h-[120vh] h-[70vh] border border-white">
+            <div
+                class="border-l-[10px] flex flex-col gap-2 lg:w-8/12 md:w-8/12 sm:w-8/12 w-10/12 border-white-500 lg:mt-44 pl-2 ml-2 text-white">
+                <p class="lg:text-[24px] md:text-[24px] sm:text-[24px] text-[16px] font-thin">CONTINUOUS TRAINING</p>
+                <h1 class="lg:text-8xl md:text-6xl sm:text-6xl fixed-img-text font-[650]">PROGRAMS <span class="text-[#dcbb26]">TAILORED</span> TO
+                    YOUR NEEDS</h1>
+            </div>
+        </section>
+
+        <section
+            class="programs grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 lg:-mt-24 mt-28 gap-2 w-11/12 m-auto">
+            <div class="border border-gray-300 rounded-2xl flex flex-col lg:w-[90%] mx-auto w-full hover:shadow-2xl">
+                <div>
+                    <img class="w-full rounded-t-2xl" src="./images/program-img-1.jpg" alt="">
+                </div>
+                <div class="pl-4 pt-4 pb-16">
+                    <p class="text-[#dcbb26] text-lg">PROGRAM</p>
+                    <p class="text-2xl font-[650] w-6/12">PRO PLACEMENT PROGRAM</p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded-2xl flex flex-col lg:w-[90%] mx-auto w-full hover:shadow-2xl">
+                <div>
+                    <img class="w-full rounded-t-2xl" src="./images/program-img-2.jpg" alt="">
+                </div>
+                <div class="pl-4 pt-4 pb-16">
+                    <p class="text-[#dcbb26] text-lg">PROGRAM</p>
+                    <p class="text-2xl font-[650] w-6/12">ACADEMY DEVELOPMENT</p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded-2xl flex flex-col lg:w-[90%] mx-auto w-full hover:shadow-2xl">
+                <div>
+                    <img class="w-full rounded-t-2xl" src="./images/program-img-3.jpg" alt="">
+                </div>
+                <div class="pl-4 pt-4 pb-16">
+                    <p class="text-[#dcbb26] text-lg">PROGRAM</p>
+                    <p class="text-2xl font-[650] w-6/12">SPECIALIST PROGRAM</p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded-2xl flex flex-col lg:w-[90%] mx-auto w-full hover:shadow-2xl">
+                <div>
+                    <img class="w-full rounded-t-2xl" src="./images/program-img-4.jpg" alt="">
+                </div>
+                <div class="pl-4 pt-4 pb-16">
+                    <p class="text-[#dcbb26] text-lg">PROGRAM</p>
+                    <p class="text-2xl font-[650] w-6/12">JUNIOR SUMMER PROGRAM</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex lg:flex-row flex-col mt-24">
+            <div class="lg:w-6/12 w-full first-half bg-cover lg:h-[120vh] h-[60vh] md:h-[100vh]"></div>
+            <div class="lg:w-6/12 w-full flex justify-center items-center second-half bg-cover lg:h-[120vh] h-[70vh]">
+                <div class="color-overlay absolute lg:w-6/12 w-full lg:h-[120vh] h-[70vh] bg-[#006838] opacity-60">
+                </div>
+                <div class="lg:w-8/12 md:w-8/12 sm:w-8/12 w-full max-sm:ml-2">
+                    <div class="border-l-[5px] relative flex flex-col gap-2 border-white pl-4 text-white">
+                        <p class="text-[24px] font-thin"><i class="fa-solid fa-quote-right"></i></p>
+                        <h1 class="lg:text-4xl testimonial-1 text-2xl font-[650]">IT IS AN AWESOME EXPERIENCE AND COACHES MAKE IT SO MUCH
+                            FUN THAT YOU DON'T KNOW YOU'RE EVEN LEARNING.
+                        </h1>
+                    </div>
+                    <p class="relative text-white my-2">Annika, 9</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex">
+            <div class="flex flex-col w-8/12">
+                <div class="border-l-[10px] flex flex-col gap-2 lg:w-8/12 w-full border-black mt-32 ml-4 pl-4">
+                    <p class="lg:text-[24px] sm:text-[24px] md:text-[24px] text-[16px] font-thin">ABOUT US</p>
+                    <h1 class="lg:text-6xl md:text-4xl sm:text-4xl text-3xl font-[650]"> WE OFFER THE HIGHEST LEVEL COACHING AND SKILLS <span
+                            class="text-[#dcbb26]">GROWTH</span></h1>
+                </div>
+                <div class="flex lg:flex-row flex-col gap-10 ml-4 mt-10">
+                    <div>
+                        <video controls width="auto" height="auto" class="rounded-2xl ">
+                            <source src="https://www.youtube.com/watch?v=yTiyuVrVrv4">
+                        </video>
+                    </div>
+                    <div class="lg:w-5/12 w-full">
+                        <p class="font-thin text-sm mb-2">During the school year, we offer a variety of different
+                            types of structured classes that run in consecutive 5-week sessions. Click the session links
+                            on this page to display our available schedules.
+                        </p>
+                        <button class="uppercase font-bold whitespace-nowrap">
+                            <i class="text-[#dcbb26] fa-solid fa-arrow-right-long mr-2"></i>
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex lg:flex-row flex-col-reverse mt-24">
+            <div class="lg:w-6/12 w-full bg-[#080808]">
+                <div
+                    class="lg:border-l-[10px] border-l-[5px] flex flex-col gap-2 w-8/12 border-white mt-32 ml-4 lg:pl-6 pl-2 text-white">
+                    <p class="lg:text-[24px] text-md font-thin">NURTURING EXCELLENCE</p>
+                    <h1 class="lg:text-7xl md:text-6xl text-4xl font-[650]">OUR CLUB IN<span class="text-[#dcbb26]"> NUMBERS</span>
+                    </h1>
+                </div>
+                <div class="grid grid-cols-2  w-7/12 m-auto mt-10 gap-8">
+                    <div class="text-white">
+                        <div class="pb-8">
+                            <p class="font-bold lg:text-6xl md:text-6xl  text-4xl">326</p>
+                            <p class="font-thin text-sm">GAMES PLAYED</p>
+                        </div>
+                        <div>
+                            <p class="font-bold lg:text-6xl md:text-6xl text-4xl">36</p>
+                            <p class="font-thin text-sm">WIN RATIO</p>
+                        </div>
+                    </div>
+                    <div class="text-white">
+                        <div class="pb-8">
+                            <p class="font-bold lg:text-6xl md:text-6xl text-4xl">56</p>
+                            <p class="font-thin text-sm">TROPHIES WON</p>
+                        </div>
+                        <div>
+                            <p class="font-bold lg:text-6xl md:text-6xl text-4xl">101</p>
+                            <p class="font-thin text-sm">CLUB MEMBERS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-6/12 w-full club-in-image bg-cover lg:h-[120vh] h-[90vh]">
+            </div>
+        </section>
+    </main>
+
+    <footer class="lg:w-full px-4 flex lg:flex-row flex-col text-white bg-black lg:h-[60vh]">
+        <div class="footer-logo lg:w-2/12 lg:mx-8 lg:-mt-2 w-full flex pt-20 max-lg:pt-14">
+            <img class="lg:w-[150px] h-[100px]  w-[150px] h-[150px]" src="./images/1000-hills-logo.png" alt="Logo">
+        </div>
+        <div class="lg:w-3/12 w-full flex flex-col lg:mx-4 footer-info pt-20 max-lg:pt-8">
+            <p class="text-lg font-bold">TEAM</p>
+            <ul class="mt-9 text-[#6d6e71] w-10/12 text-sm font-thin flex flex-col gap-1  ">
+                <li class="hover:text-white"><a href="#">ROSTER</a></li>
+                <li class="hover:text-white"><a href="#">ACADEMY</a></li>
+                <li class="hover:text-white"><a href="#">COACHING STUFF</a></li>
+                <li class="hover:text-white"><a href="#">SCHEDULE</a></li>
+                <li class="hover:text-white"><a href="#">GALLERY</a></li>
+            </ul>
+        </div>
+        <div class="lg:w-3/12 w-full flex flex-col footer-info pt-20 max-lg:pt-8">
+            <p class="flex text-lg font-bold">CLUB</p>
+            <ul class="flex text-[#6d6e71] flex-col mt-9 gap-1 text-sm font-thin">
+                <li class="hover:text-white"><a href="#">ABOUT US</a></li>
+                <li class="hover:text-white"><a href="#">HISTORY</a></li>
+                <li class="hover:text-white"><a href="./services.html">SERVICES</a></li>
+                <li class="hover:text-white"><a href="#">NEWS & MEDIA</a></li>
+                <li class="hover:text-white"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col lg:w-4/12 w-full">
+            <div class="flex flex-col footer-info pt-20 max-lg:pt-8">
+                <p class="flex text-lg font-bold">CONTACT</p>
+                <ul class="flex text-[#6d6e71] flex-col mt-9 gap-1 text-sm font-thin">
+                    <li><a href="#"><i class="text-[#006838] mr-2 fa-solid fa-phone"></i>1-800-1-900</a></li>
+                    <li><a href="#"><i class="text-[#006838] mr-2 fa-solid fa-envelope"></i>info@campo.com</a></li>
+                    <li><a href="#"><i class="text-[#006838] mr-2 fa-solid fa-location-dot"></i>60 East 65th Street,
+                            Minneapolis</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col mt-9 footer-info max-lg:pb-14">
+                <p class="flex text-lg font-bold">CONNECT</p>
+                <ul class="flex gap-3 mt-4 text-lg font-thin">
+                    <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

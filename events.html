@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<style>
+    /* Display the menu when the checkbox is checked */
+    #menu-toggle:checked~#menu {
+        display: block;
+    }
+
+    /* Hide the menu if not checked */
+    #menu:hover {
+        display: block;
+    }
+</style>
+
+<body>
+    <nav
+        class="navbar top-0 left-0 w-[100%] z-10 h-[10vh] flex justify-between items-center py-1 px-2 text-[#fff] fixed">
+        <div class="navbar-logo w-2/12 ">
+            <a href="./index.html"><img class="w-[60px] hover:w-[70px] mt-6 ml-6" src="./images/1000-hills-logo.png"
+                    alt="Logo"></a>
+            <!-- Replace with your logo -->
+        </div>
+        <ul class="flex lg:space-x-4 font-thin w-8/12 uppercase gap-2 text-sm ">
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./index.html">Home</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">About</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Community</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Results</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./news.html">News</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./events.html">Events</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="flex w-2/12 list-1">
+            <ul class="flex lg:gap-6 gap-2 justify-center items-center text-md ">
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.facebook.com/1000hillsrugby/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.instagram.com/1000hillsrugby/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg"
+                        href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 ">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.youtube.com/@1000HillsRugby">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="relative icon-1 lg:hidden">
+            <!-- Hidden Checkbox for Toggle -->
+            <input type="checkbox" id="menu-toggle" class="hidden">
+
+            <!-- Label as Menu Icon -->
+            <label for="menu-toggle" class="cursor-pointer text-2xl">
+                <i class="icon-1 lg:hidden text-black text-xl pr-3 fa-solid fa-bars"></i>
+            </label>
+
+            <!-- Hidden Menu -->
+            <div id="menu"
+                class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg mt-2 w-48 hidden">
+                <ul class="flex flex-col text-left">
+                    <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./index.html">Home</a></li>
+                    <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">About</a></li>
+                    <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Community</a></li>
+                    <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Results</a></li>
+                    <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./news.html">News</a></li>
+                    <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="./events.html">Events</a>
+                    </li>
+                    <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <section class="events-home-page bg-cover bg-no-repeat h-[100vh]  max-w-full grid grid-cols-12 items-center ">
+            <div class="text-container border-l-[10px] flex flex-col gap-2 col-span-9 border-white-500 pl-2 text-white">
+                <p class="text-[20px] font-thin">SCHEDULE & EVENTS</p>
+                <h1 class="lg:text-8xl text-7xl font-[650]">PLAN <br> YOUR <br>
+                    <span class="text-[#6d6e71]">VISIT</span>
+                </h1>
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center mt-24">
+            <img class="w-[200px] h-[200px]" src="./images/1000-hills-logo.png" alt="">
+            <p class="text-lg mt-4 text-center font-semithin">Stay up-to-date on all the best upcoming rugby <br> events
+                all year long</p>
+        </section>
+
+        <section class="my-48 ml-6">
+            <div class="border-l-[10px] flex my-16 flex-col gap-2 col-span-9 border-black pl-2">
+                <p class="font-semibold">WHAT'S HAPPENING</p>
+                <h1 class="text-5xl font-[650]">CLUB
+                    <span class="text-[#6d6e71]">EVENTS</span>
+                </h1>
+            </div>
+            <div class="flex lg:flex-row justify-center items-center flex-col gap-6">
+                <div class="lg:w-8/12 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-6">
+                    <div
+                        class="flex lg:flex-row flex-col items-center bg-white text-white rounded-xl justify-between w-full hover:shadow-2xl border border-[#6d6e71]">
+                        <div
+                            class="news-box text-center bg-[#6d6e71] lg:rounded-s-xl max-lg:rounded-t-xl text-white py-4 px-2 lg:w-auto w-[100%] h-[100%]">
+                            <p class="text-lg font-semibold">11</p>
+                            <p class="text-md font-thin">NOV</p>
+                        </div>
+                        <!-- Match details with white background and no padding -->
+                        <div
+                            class="flex-1 flex lg:justify-between justify-center items-center rounded-e-xl bg-white text-[#02120b] py-4 px-6 w-11/12 ">
+                            <div class="flex lg:flex-row flex-col items-center m-0">
+                                <img class="w-20 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                                <div class="flex flex-col text-center ">
+                                    <p class="text-2xl font-semibold">WASHINGTON WOLVES</p>
+                                    <p>SPORT ARENA / 7.45PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex lg:flex-row flex-col items-center bg-white text-white rounded-xl justify-between  w-full hover:shadow-2xl border border-[#6d6e71]">
+                        <div
+                            class="news-box text-center bg-[#6d6e71] lg:rounded-s-xl max-lg:rounded-t-xl text-white py-4 px-2 lg:w-auto w-[100%] h-[100%]">
+                            <p class="text-lg font-semibold">18</p>
+                            <p class="text-md font-thin">NOV</p>
+                        </div>
+                        <!-- Match details with white background and no padding -->
+                        <div
+                            class="flex-1 flex lg:justify-between justify-center items-center rounded-e-xl bg-white text-[#02120b] py-4 px-6 w-11/12">
+                            <div class="flex lg:flex-row flex-col items-center m-0">
+                                <img class="w-20 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                                <div class="flex flex-col text-center">
+                                    <p class="text-2xl font-semibold">N.CAROLINA HORNETS</p>
+                                    <p>SPORT ARENA / 8PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex lg:flex-row flex-col items-center bg-white text-white rounded-xl justify-between  w-full hover:shadow-2xl border border-[#6d6e71]">
+                        <div
+                            class="news-box text-center bg-[#6d6e71] lg:rounded-s-xl max-lg:rounded-t-xl text-white py-4 px-2 lg:w-auto w-[100%] h-[100%]">
+                            <p class="text-lg font-semibold">5</p>
+                            <p class="text-md font-thin">DEC</p>
+                        </div>
+                        <!-- Match details with white background and no padding -->
+                        <div
+                            class="flex-1 flex lg:justify-between justify-center items-center rounded-e-xl bg-white text-[#02120b] py-4 px-6 w-11/12 ">
+                            <div class="flex lg:flex-row flex-col items-center m-0">
+                                <img class="w-20 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                                <div class="fle flex-col text-center">
+                                    <p class="text-2xl font-semibold">N.CAROLINA HORNETS</p>
+                                    <p>SPORT ARENA / 7.45PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex lg:flex-row flex-col items-center bg-white text-white rounded-xl justify-between  w-full hover:shadow-2xl border border-[#6d6e71]">
+                        <div
+                            class="news-box text-center bg-[#6d6e71] lg:rounded-s-xl max-lg:rounded-t-xl text-white py-4 px-2 lg:w-auto w-[100%] h-[100%]">
+                            <p class="text-lg font-semibold">27</p>
+                            <p class="text-md font-thin">NOV</p>
+                        </div>
+                        <!-- Match details with white background and no padding -->
+                        <div
+                            class="flex-1 lg:justify-between flex justify-center justify-center rounded-e-xl bg-white text-[#02120b] py-4 px-6 w-11/12 ">
+                            <div class="flex lg:flex-row flex-col items-center m-0">
+                                <img class="w-20 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                                <div class="fle flex-col text-center">
+                                    <p class="text-2xl font-semibold ">WASHINGTON WOLVES</p>
+                                    <p>SPORT ARENA / 7.45PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 pt-48 pl-4 event-kids-img bg-cover w-full rounded-2xl">
+                    <p class="text-md font-semibold">22/NOV</p>
+                    <p class="text-3xl font-bold">RUGBY CLASSES <br> FOR KIDS</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-14">
+            <div class="border-l-[10px] w-11/12 mx-auto flex my-16 flex-col gap-2 col-span-9 border-black pl-2">
+                <p class="font-semibold">TRAINING SESSIONS</p>
+                <h1 class="text-5xl font-[650]">WEEKLY
+                    <span class="text-[#6d6e71]">SCHEDULE</span>
+                </h1>
+            </div>
+            <div class="border-2 w-11/12 mx-auto border-black rounded-2xl">
+                <table class="w-full">
+                    <div>
+                        <tr class="border-b border-gray-300">
+                            <th class="py-3 pl-5 text-3xl flex justify-start">MONDAY</th>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-volleyball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> SPORT ARENA</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">10.00-11.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Shooting Drills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2 border-black ">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-football"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> OUTCOOR COURT</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">15.00-16.00</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Running Session</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr class="border-b border-gray-300">
+                            <th class="py-3 pl-5 text-3xl flex justify-start">TUESDAY</th>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-basketball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> GYM</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">10.00-11.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Strenght And Conditioning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2 border-black ">
+                            <td class="py-3">
+                                <div class=" table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-bowling-ball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> SPORT ARENA</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">12.00-13.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Offensive Moves</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr class="border-b border-gray-300">
+                            <th class="py-3 pl-5 text-3xl flex justify-start">WEDNESDAY</th>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-basketball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> GYM</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">09.00-10.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Strenght And Conditioning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2 border-black ">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-bowling-ball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> SPORT ARENA</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">13.00-14.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Shooting Drills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr class="border-b border-gray-300">
+                            <th class="py-3 pl-5 text-3xl flex justify-start">THURSDAY</th>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-basketball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i>OUTDOOR COURT</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">07.00-08.00</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Warm Up Drills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2 border-black ">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-bowling-ball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i>GYM</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">17.00-18.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Post Play Drills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr class="border-b border-gray-300">
+                            <th class="py-3 pl-5 text-3xl flex justify-start">FRIDAY</th>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-basketball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> GYM</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">09.00-10.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >SLay Ups & Finishing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2 border-black ">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-bowling-ball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> SPORT ARENA</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">14.00-15.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class="text-2xl font-semibold flex items-center">Conditioning Drills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr class="border-b border-gray-300">
+                            <th class="py-3 pl-5 text-3xl flex justify-start">SATURDAY</th>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-basketball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> GYM</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">08.00-09.00</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Rebounding</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2 border-black ">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-bowling-ball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> SPORT ARENA</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">13.00-14.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class="text-2xl font-semibold flex items-center">Footwork</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr class="border-b border-gray-300">
+                            <th class="py-3 pl-5 text-3xl flex justify-start">SUNDAY</th>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-basketball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> GYM</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">09.00-10.00</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class=" text-2xl  font-semibold flex items-center" >Passing Drills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr">
+                            <td class="py-3">
+                                <div class="table-div-1 flex gap-4 px-4">
+                                    <div>
+                                        <i class="text-5xl fa-solid fa-bowling-ball"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div>
+                                            <p class="font-thin text-sm"><i class="fa-solid fa-location-dot"></i> SPORT ARENA</p>
+                                        </div>
+                                        <div class="flex table-div-2 gap-4">
+                                            <p class="font-semibold flex items-center text-2xl text-[#6d6e71]">10.30-11.30</p>
+                                            <p class="table-middle-bo border border-gray-300 mx-2"></p>
+                                            <p class="text-2xl font-semibold flex items-center">Training Tips</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="lg:w-full px-4 flex lg:flex-row flex-col text-white bg-black lg:h-[60vh]">
+        <div class="footer-logo lg:w-2/12 lg:mx-8 lg:-mt-2 w-full flex pt-20 max-lg:pt-14">
+            <img class="lg:w-[150px] h-[100px]  w-[150px] h-[150px]" src="./images/1000-hills-logo.png" alt="Logo">
+        </div>
+        <div class="lg:w-3/12 w-full flex flex-col lg:mx-4 footer-info pt-20 max-lg:pt-8">
+            <p class="text-lg font-bold">TEAM</p>
+            <ul class="mt-9 text-[#6d6e71] w-10/12 text-sm font-thin flex flex-col gap-1  ">
+                <li class="hover:text-white"><a href="#">ROSTER</a></li>
+                <li class="hover:text-white"><a href="#">ACADEMY</a></li>
+                <li class="hover:text-white"><a href="#">COACHING STUFF</a></li>
+                <li class="hover:text-white"><a href="#">SCHEDULE</a></li>
+                <li class="hover:text-white"><a href="#">GALLERY</a></li>
+            </ul>
+        </div>
+        <div class="lg:w-3/12 w-full flex flex-col footer-info pt-20 max-lg:pt-8">
+            <p class="flex text-lg font-bold">CLUB</p>
+            <ul class="flex text-[#6d6e71] flex-col mt-9 gap-1 text-sm font-thin">
+                <li class="hover:text-white"><a href="#">ABOUT US</a></li>
+                <li class="hover:text-white"><a href="#">HISTORY</a></li>
+                <li class="hover:text-white"><a href="#">SERVICES</a></li>
+                <li class="hover:text-white"><a href="#">NEWS & MEDIA</a></li>
+                <li class="hover:text-white"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col lg:w-4/12 w-full">
+            <div class="flex flex-col footer-info pt-20 max-lg:pt-8">
+                <p class="flex text-lg font-bold">CONTACT</p>
+                <ul class="flex text-[#6d6e71] flex-col mt-9 gap-1 text-sm font-thin">
+                    <li><a href="#"><i class="text-[#006838] mr-2 fa-solid fa-phone"></i>1-800-1-900</a></li>
+                    <li><a href="#"><i class="text-[#006838] mr-2 fa-solid fa-envelope"></i>info@campo.com</a></li>
+                    <li><a href="#"><i class="text-[#006838] mr-2 fa-solid fa-location-dot"></i>60 East 65th Street,
+                            Minneapolis</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col mt-9 footer-info max-lg:pb-14">
+                <p class="flex text-lg font-bold">CONNECT</p>
+                <ul class="flex gap-3 mt-4 text-lg font-thin">
+                    <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
